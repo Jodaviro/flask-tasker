@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+{% block title %} 
+{{ super() }}
+    Error 
+{% endblock %}
+
+{% block content %}
+  <h3>El puto error de la vida 500</h3>
+  <p> {{ error }}</p> 
+  {% endblock %}

@@ -6,7 +6,7 @@ from flask import current_app, url_for
 class MainTest(TestCase):
     def create_app(self):
         app.config['TESTING'] = True
-        app.config['WTF_CSRF_ENABLE'] = False
+        app.config['WTF_CSRF_ENABLED'] = False
         return app
 
     def test_app_exists(self):
@@ -29,7 +29,10 @@ class MainTest(TestCase):
             'password': 'fake-password'
         }
         response = self.client.post(url_for('hello'), data=fake_form)
+
         self.assertRedirects(response, url_for('index'))
+
+
 
 # if __name__ == '__main__':
 #     unittest.main()

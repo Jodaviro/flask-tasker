@@ -8,3 +8,7 @@ class LoginForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     submit = SubmitField('Enviar')
 
+
+class TodoForms(FlaskForm):
+    description = StringField('Descripcion', validators=[DataRequired()])
+    submit = SubmitField('Crear')

@@ -9,6 +9,7 @@ dominate==2.6.0
 firebase-admin==4.5.2
 Flask==1.0.2
 Flask-Bootstrap==3.3.7.1
+Flask-Login==0.4.1
 Flask-Testing==0.7.1
 Flask-WTF==0.14.2
 google-api-core==1.26.1

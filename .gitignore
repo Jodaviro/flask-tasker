@@ -3,4 +3,4 @@ Pipfile
 activation.sh
 Pipfile.lock
 .vscode
-
+.idea

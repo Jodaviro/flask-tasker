@@ -6,7 +6,7 @@ from wtforms.validators import DataRequired
 class LoginForm(FlaskForm):
     username = StringField('Nombre de Usuario', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
-    submit = SubmitField('Enviar')
+    submit = SubmitField('Login')
 
 
 class TodoForm(FlaskForm):

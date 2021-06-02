@@ -1,6 +1,7 @@
 __pycache__
-Pipfile
 activation.sh
-Pipfile.lock
 .vscode
 .idea
+Pipfile
+Pipfile.lock
+app/.DS_Store

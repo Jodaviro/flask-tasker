@@ -6,6 +6,13 @@
 {% endblock %}
 
 {% block content %}
+<div class="jumbotron">
+  <h2>Bienvenido a FlaskTasker!</h2>
+  <p>Esta aplicacion guardará una lista de tareas por cada usuario (todo app)</p>
+  <p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('auth.signup') }}" role="button">Registrate</a>
+  </p>
+</div>
   <div class="container">
       {{ wtf.quick_form(login_form) }}
   </div>

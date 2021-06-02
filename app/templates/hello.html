@@ -9,17 +9,18 @@
 
 {% block content %}
 
+
+<div class="container-fluid">
     {% if username %}
         <h1>Bienvenido, {{username}}</h1>
     {% endif %}
 
     {% if user_ip %}
-        <h3 class="colosus" > tu ip es {{user_ip}}</h3>
+        <h3> tu ip es {{user_ip}}</h3>
     {% else %}
         <a href="{{ url_for('index') }}"> Ir a inicio</a>
     {% endif %}
 
-    <div class="container">
         <h2> Crea una nueva tarea</h2>
         {{ wtf.quick_form(todo_form) }}
     </div>
